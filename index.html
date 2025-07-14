@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Southwire UI Screenshots</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      font-family: sans-serif;
+    }
+    .screenshot-section {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .screenshot-section img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      box-shadow: 0 0 24px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="screenshot-section">
+    <img src="Screenshot 2025-07-14 at 11.05.50 AM.png" alt="Southwire UI Screenshot 1" />
+  </div>
+  <div class="screenshot-section">
+    <img src="Screenshot 2025-07-14 at 11.11.22 AM.png" alt="Southwire UI Screenshot 2" />
+  </div>
+  <div class="screenshot-section">
+    <img src="Screenshot 2025-07-14 at 11.11.31 AM.png" alt="Southwire UI Screenshot 3" />
+  </div>
+  <script src='https://cdn.jsdelivr.net/npm/kore-web-sdk@undefined/dist/umd/kore-web-sdk-umd-chat.min.js'></script> 
+  <script> KoreChatSDK.chatConfig.botOptions.API_KEY_CONFIG.KEY = 'd84e6bf86c0744f69c8794f184c2e0bba1cce6a50ea94328a936ab9c74d27e40st43';
+   new KoreChatSDK.chatWindow().show(KoreChatSDK.chatConfig); </script>
+
+</body>
+</html>
