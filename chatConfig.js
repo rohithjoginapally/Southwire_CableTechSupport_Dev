@@ -1,18 +1,16 @@
+// import { chatConfig, chatWindow } from 'kore-web-sdk';
+
 var chatConfig = KoreChatSDK.chatConfig;
 var chatWindow = KoreChatSDK.chatWindow;
 let botOptions=chatConfig.botOptions;
 	
  botOptions.JWTUrl = "https://mk2r2rmj21.execute-api.us-east-1.amazonaws.com/dev/users/sts";
-//botOptions.userIdentity = 'rohithj@pronixinc.com';
+ botOptions.userIdentity = 'rohithj@pronixinc.com';
  botOptions.botInfo = { name: "Southwire’s CableTechSupport™ Services’ Re3™ Chatbot", "_id": "st-4ad03619-ea5d-5f8d-b807-ec12c8e9032d" };
  botOptions.clientId = "cs-12455619-79ad-5225-8841-02b6e722dbd4";
  botOptions.clientSecret = "IYNA709fsWr1UsjvDr40T6X9Sy1JNQ2UUkxNEQaxSCI=";
-//  botOptions.loadHistory =  false;
 
  chatConfig.history.enable = false;
-
 var chatWindowInstance = new chatWindow(chatConfig);
-chatWindowInstance.show(chatConfig);
 
-//  KoreChatSDK.chatConfig.botOptions.API_KEY_CONFIG.KEY = '417916eb8f714fb1bfcce162d36522db103d161698fc4b2883a8151b904119f0st4a'; 
-//  new KoreChatSDK.chatWindow().show(KoreChatSDK.chatConfig); 
+chatWindowInstance.show(chatConfig);
