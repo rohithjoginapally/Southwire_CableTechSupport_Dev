@@ -1,6 +1,7 @@
 // import { chatConfig, chatWindow } from 'kore-web-sdk';
 
 var chatConfig = KoreChatSDK.chatConfig;
+var chatWindow = KoreChatSDK.chatWindow;
 let botOptions=chatConfig.botOptions;
 	
  botOptions.JWTUrl = "https://mk2r2rmj21.execute-api.us-east-1.amazonaws.com/dev/users/sts";
