@@ -1,4 +1,4 @@
-import { chatConfig, chatWindow } from 'kore-web-sdk';
+// import { chatConfig, chatWindow } from 'kore-web-sdk';
 
 let botOptions=chatConfig.botOptions;
 	
